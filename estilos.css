@@ -1,0 +1,276 @@
+.flex-container{
+    width:100%;
+    max-width:1366px;
+    min-width:220px;
+    margin:auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center ;
+    align-items: center ;
+    align-content: stretch;
+}
+header ul{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+.section1{
+    width:100%;
+    max-width:1366px;
+    min-width:220px;
+    display: flex;
+    flex-flow: row wrap;
+}
+.footer1{
+    width:100%;
+    max-width:1366px;
+    min-width:220px;
+    background: #c6d5c5;
+    display: flex;
+    flex-flow: row wrap;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+#Volvo{
+  width:100%;
+  max-width:1366px;
+  min-width:220px;
+  display: flex;
+  flex-flow: row wrap;
+  }
+body{
+  background-color: black;
+}
+/* Items de los contenedores flex */
+header{
+    width: 100%;
+    height:auto;
+    background-color:#5b7989;
+    border-radius: 10px 10px 0px 0px;
+    overflow:hidden;
+    text-align:center;
+    flex: 1 100%;
+    top: 0;
+}
+#Volvo1{
+    background-color:#82c3a6;
+    height:100%;
+    flex: 1 100%;
+}
+#Volvo2{
+    height:100%;
+    background: #d5c75f;
+    flex: 1 auto;
+}
+#Volvo3{
+    height:100%;
+    background: #d5c75f;
+    flex: 1 auto;
+}
+#caja1{
+    height:350px;
+    flex: 1 auto;
+    }
+#caja2{
+    height:350px;
+    flex: 1 auto;
+}
+#caja3{
+    height:350px;
+    flex: 1 auto;
+}
+#caja4{
+    height:350px;
+    flex: 1 auto;
+    font-weight: bold;
+}
+#Volvo1{
+  height: auto;
+  flex: 1 auto;
+}
+#Volvo2{
+  height: auto;
+  flex: 1 auto;
+}
+#Volvo3{
+  height: auto;
+  flex: 1 auto;
+}
+
+
+header h1{
+    font-family: 'Dancing Script';
+    font-size: 1.5em;
+    color: white;
+    text-shadow: 2px 0px 0px  #02010a;
+    line-height:60px;
+    margin:0;
+    font-size:35px;
+    float:left;
+    width:60%;
+    padding-left:20px;
+    box-sizing:border-box;
+}
+header nav{
+    float:left;
+    width:40%;
+    line-height:60px;
+    padding-right:20px;
+    box-sizing:border-box;
+}
+li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Dancing Script';
+    }
+header ul li{
+    margin:0 5px;
+    font-size:20px;
+    cursor:pointer;
+    color:#D5C5C5;
+}
+.tituloimg{
+    width: 50%;
+    background: #d5c75f;
+    font-family: 'Dancing Script';
+    font-size: 1em;
+    text-decoration:underline;
+}
+div img{
+  margin: auto;
+  display:block;
+  border: 1px solid black;
+  box-shadow: 4px 5px black;
+  width: 80%;
+}
+
+
+img{
+  box-shadow: 2px 2px;
+}
+
+
+p{
+    font-family: "Dancing Script";
+    text-align: center;
+}
+h2 {
+    font-family: "Dancing Script";
+    text-align: center;
+    flex:1 auto;
+    top: 0;
+    display: block;
+    margin: 5px;
+}
+.item{
+    color:black;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.iconored{
+     width: 30px;
+}
+.img_gris{
+  filter: grayscale(100%);
+}
+/* animaciones de imagenes*/
+#paisaje {
+  transition: all .4s;
+  animation: miAnimacion 2s;
+}
+#paisaje:hover{
+  animation: infinity;
+  transform: rotate(10deg);
+}
+#retrato{
+  transition: all .2s;
+  animation: miAnimacion 3s;
+}
+#retrato:hover{
+  transform: translate(20px, -5px);
+  animation: infinity;
+}
+li:hover{
+    border: 1px;
+
+}
+/*animacion de entrada*/
+header {
+  animation-duration: 2s;
+  animation-name: slidein;
+}
+@keyframes slidein {
+  0% {
+    margin-top: 150%;
+  }
+  60% {
+    margin-top: -5%;
+  }
+  100% {
+    margin-top: 0%;
+  }
+}
+/* Cambios responsive*/
+@media screen and (max-width: 600px) {
+    .galeria{
+      width: 100%
+    }
+    header h1{
+        font-size: 1.2em;
+        width: 100%
+    }
+    header nav{
+        width: 100%;
+    }
+    header ul{
+        flex-flow: row wrap;
+    }
+    li a{
+        font-size: 12px;
+    }
+    header{
+        display: block;
+        order:0;
+    }
+    #Volvo1{
+        flex: 1 100%;
+        order:1;
+    }
+    #Volvo2{
+        flex: 1 100%;
+        order:2;
+    }
+    #Tpaisaje{
+        flex: 1 100%;
+        order:3;
+    }
+    #Volvo3{
+        flex: 1 100%;
+        order:4;
+    }
+    #Tretrato{
+        flex: 1 100%;
+        order: 5
+    }
+    #caja1{
+         height: auto;
+         flex: 1 100%;
+    }
+    #caja2{
+        height: auto;
+         flex: 1 100%;
+    }
+    #caja3{
+        height: auto;
+         flex: 1 100%;
+    }
+    #caja4{
+        height: auto;
+         flex: 1 100%;
+    }
+}

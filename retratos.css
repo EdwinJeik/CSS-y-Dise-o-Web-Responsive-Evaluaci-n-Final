@@ -1,0 +1,266 @@
+.flex-container{
+    width:100%;
+    max-width:1366px;
+    min-width:220px;
+    margin:auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center ;
+    align-items: center ;
+    align-content: stretch;
+}
+header ul{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+.item{
+    width:100%;
+    max-width:1366px;
+    min-width:220px;
+    display: flex;
+    flex-flow: row wrap;
+}
+.footer1{
+    width:100%;
+    max-width:1366px;
+    min-width:220px;
+    background: #c6d5c5;
+    display: flex;
+    flex-flow: row wrap;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+#galeria{
+  width:100%;
+  max-width:1366px;
+  min-width:220px;
+  display: flex;
+  flex-flow: row wrap;
+  }
+
+/* Items de los contenedores flex */
+header{
+    width: 100%;
+    height:auto;
+    background-color:#5b7989;
+    border-radius: 10px 10px 0px 0px;
+    overflow:hidden;
+    text-align:center;
+    flex: 1 100%;
+    top: 0;
+}
+
+.Volvo1 {
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
+	margin: 5px;
+  order: 1;
+}
+
+
+.Volvo2 {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+	margin: 5px;
+  order: 2;
+		}
+
+.Volvo3 {
+  -webkit-filter: blur(80%);
+  filter: blur(80%);
+	margin: 5px;
+  order: 3;
+}
+
+.Volvo4 {
+  -webkit-filter: grayscale(50%);
+  filter: grayscale(70%);
+	margin: 5px;
+  order: 4;
+	}
+
+.Volvo5 {
+  -webkit-filter: sepia(90%);
+  filter: sepia(90%);
+	margin: 5px;
+order: 5;
+}
+
+
+.Volvo6 {
+  -webkit-filter: grayscale(70%);
+  filter: grayscale(80%);
+	margin: 5px;
+  order: 6;
+}
+
+.galeria{
+    height:50%;
+    weight:50%;
+    background: #d5c75f;
+    flex: 1 auto;
+}
+
+
+
+
+#caja1{
+    height:350px;
+    flex: 1 auto;
+    }
+#caja2{
+    height:350px;
+    flex: 1 auto;
+}
+#caja3{
+    height:350px;
+    flex: 1 auto;
+}
+#caja4{
+    height:350px;
+    flex: 1 auto;
+    font-weight: bold;
+}
+
+
+
+header h1{
+    font-family: 'Dancing Script';
+    font-size: 1.5em;
+    color: white;
+    text-shadow: 2px 0px 0px  #02010a;
+    line-height:60px;
+    margin:0;
+    font-size:35px;
+    float:left;
+    width:60%;
+    padding-left:20px;
+    box-sizing:border-box;
+}
+header nav{
+    float:left;
+    width:40%;
+    line-height:60px;
+    padding-right:20px;
+    box-sizing:border-box;
+}
+li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Dancing Script';
+    }
+header ul li{
+    margin:0 5px;
+    font-size:20px;
+    cursor:pointer;
+    color:#D5C5C5;
+}
+
+
+
+#galeria1 img{
+  margin: 5px;;
+  display:block;
+  border: 1px solid black;
+  box-shadow: 2px 2px black;
+  width: 400px;
+  height: 250px;
+  flex: 1 auto;
+  top: 0;
+  }
+
+#caja3 img{
+  margin: auto;
+    display:block;
+    border: 1px solid black;
+    box-shadow: 2px 2px black;
+    width: 10%;
+    flex: 1 auto;
+    top: 0;
+}
+p{
+    font-family: "Dancing Script";
+    text-align: center;
+}
+h2 {
+    font-family: "Dancing Script";
+    text-align: center;
+}
+
+.iconored{
+     width: 30px;
+}
+.img_gris{
+  filter: grayscale(100%);
+}
+
+
+li:hover{
+    border: 1px;
+
+}
+/*animacion de entrada*/
+header {
+  animation-duration: 2s;
+  animation-name: slidein;
+}
+@keyframes slidein {
+  0% {
+    margin-top: 150%;
+  }
+  60% {
+    margin-top: -5%;
+  }
+  100% {
+    margin-top: 0%;
+  }
+}
+/* Cambios responsive*/
+@media screen and (max-width: 600px) {
+    .galeria1{
+      width: 100%
+    }
+    header h1{
+        font-size: 1.2em;
+        width: 100%
+    }
+    header nav{
+        width: 100%;
+    }
+    header ul{
+        flex-flow: row wrap;
+    }
+    li a{
+        font-size: 12px;
+    }
+    header{
+        display: block;
+        order:0;
+    }
+
+    #galeria1{
+        flex: 1 100%;
+    }
+
+    #caja1{
+         height: auto;
+         flex: 1 100%;
+    }
+    #caja2{
+        height: auto;
+         flex: 1 100%;
+    }
+    #caja3{
+        height: auto;
+         flex: 1 100%;
+    }
+    #caja4{
+        height: auto;
+         flex: 1 100%;
+    }
+}
